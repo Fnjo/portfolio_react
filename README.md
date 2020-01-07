@@ -1,2 +1,3 @@
-# portfolio_react
-Portfolio made with ReactJS
+# Portfolio by Franjo Lam
+===
+
