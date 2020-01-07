@@ -9,10 +9,14 @@ $yarn start
 This is a complete refactor of my old portfolio in React, the old one was written in basic html and css.
 With this refactor comes a small update in styling
 
-<br>
+
+
+
 ## Important adjustments
 * Intro and projects view is now split up, it used to be all in one huge index file.
 * Everything has been split properly into its own component.
+
+
 
 
 ## Style changes
@@ -27,18 +31,31 @@ With this refactor comes a small update in styling
 Updating and adding new projects is now 
 
 
+
+
 ## Technical details
 * Used proptypes for typechecking
 
 
+
+
 ## Project structure
 ```
+public
+ ├── favicons
+ ├── index.html
+ ├── manifst.json
 src
-    ├── App.css
-    ├── App.js
-    ├── App.test.js
-    ├── index.css
-    ├── index.js
-    ├── logo.svg
-    └── serviceWorker.js
+ ├── components
+      ├── nav
+      ├── projects
+      ├── views
+ ├── images
+      ├── fnjo
+      ├── logo
+ ├── App.css
+ ├── App.js
+ ├── index.css
+ ├── index.js
+ └── serviceWorker.js
 ```
