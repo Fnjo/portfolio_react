@@ -1,9 +1,9 @@
 # Portfolio by Franjo Lam
 
 ```
-* Clone repo
-* $yarn
-* $yarn start
+- Clone repo
+- $yarn
+- $yarn start
 ```
 
 
