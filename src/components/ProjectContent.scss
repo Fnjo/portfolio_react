@@ -1,0 +1,231 @@
+.projectContent {
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    margin-left: 31.5vh;
+    max-width: 60%;
+
+    h2 {
+        font-size: 40px;
+        margin: 0;
+    }
+
+    h3 {
+        font-weight: 200;
+        font-size: 20px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    & > * {
+        padding-top: 60px;
+        margin-left: 15%;
+        min-height: calc(100vh - 60px);
+    }
+
+    .showallbtn {
+        display: none;
+    }
+
+    .img_1 {
+        width: 60vw;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        filter: drop-shadow(0 0 15px #777);
+    }
+
+    .aboutMe {
+        margin-left: 30%;
+        justify-self: center;
+        padding-top: 0;
+        min-height: unset;
+
+        p {
+            color: #888888;
+            font-size: 20px;
+            font-weight: 200;
+        }
+
+        p.name {
+            width: 100%;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        p.name span {
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        p.job1,
+        p.job2 {
+            font-size: 40px;
+            font-weight: 100;
+            width: 100%;
+            display: inline-block;
+        }
+
+        p.job1 {
+            margin-bottom: -5px;
+            color: #ff945e;
+        }
+
+        p.job2 {
+            color: #7d91ff;
+        }
+
+        p.location {
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        img.amsterdam {
+            width: 350px;
+            margin-top: 30px;
+        }
+
+        #showprojects {
+            display: none;
+        }
+    }
+
+    .telling,
+    .tellingSocial {
+        padding-bottom: 60px;
+    }
+
+    .mrBurger {
+        .img_1,
+        .img_2 {
+            width: 200px;
+            margin-bottom: 40px;
+            margin-right: 50px;
+        }
+    }
+
+    &.fadeInText {
+        animation-duration: 0.8s;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.8s;
+        -webkit-animation-fill-mode: both;
+        opacity: 0;
+        animation-name: fadeInText;
+        -webkit-animation-name: fadeInText;
+    }
+
+    &.fadeOutText-exit-done {
+        animation-duration: 0.6s;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.6s;
+        -webkit-animation-fill-mode: both;
+        opacity: 1;
+        animation-name: fadeOutText;
+        -webkit-animation-name: fadeOutText;
+    }
+
+    @keyframes fadeInText {
+        from {
+            transform: translate3d(0, 40px, 0);
+        }
+
+        to {
+            transform: translate3d(0, 0, 0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeOutText {
+        from {
+            transform: translate3d(0, 0, 0);
+            opacity: 1;
+        }
+
+        to {
+            transform: translate3d(0, -40px, 0);
+            opacity: 0;
+        }
+    }
+
+    @media (max-width: 770px) {
+        margin-left: unset;
+        max-width: unset;
+        background-color: #fff;
+
+        h2 {
+            max-width: 85%;
+            line-height: 42px;
+        }
+
+        & > * {
+            padding-top: 30px;
+            margin-left: 7.5%;
+            max-width: 85%;
+            min-height: calc(100vh - 30px);
+        }
+
+        .showallbtn {
+            width: 30px;
+            height: 30px;
+            display: block;
+        }
+
+        .img_1 {
+            width: 100%;
+        }
+
+        .projectContent-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .aboutMe {
+            width: 70%;
+            margin-left: unset;
+            margin: auto;
+            margin-top: 30%;
+
+            p.job1,
+            p.job2 {
+                font-size: 40px;
+                font-weight: 100;
+            }
+
+            p.job1 {
+                line-height: 41px;
+            }
+
+            img.amsterdam {
+                width: 100%;
+            }
+
+            #showprojects {
+                padding: 15px 30px;
+                border: none;
+                border-radius: 5px;
+                color: #fff;
+                font-weight: 100;
+                margin: 30px 0 15px 0;
+                background: linear-gradient(135deg, #6e8efb, #a777e3);
+                display: block;
+                font-size: 14px;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+
+        .mrBurger {
+            .img_1,
+            .img_2 {
+                width: 45%;
+                margin-bottom: 40px;
+                margin-right: 10px;
+            }
+        }
+    }
+}

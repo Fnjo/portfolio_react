@@ -1,0 +1,142 @@
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+
+    .mainLogo_F {
+        height: 341px;
+        animation-delay: 0.8s;
+
+        &-exit-done {
+            animation-delay: 0s !important;
+        }
+    }
+    .mainLogo_N {
+        height: 341px;
+        margin-left: -125px;
+        animation-delay: 1s;
+
+        &-exit-done {
+            animation-delay: 0.2s !important;
+        }
+    }
+    .mainLogo_J {
+        height: 341px;
+        margin-left: -152px;
+        animation-delay: 1.2s;
+
+        &-exit-done {
+            animation-delay: 0.4s !important;
+        }
+    }
+    .mainLogo_O {
+        height: 341px;
+        margin-top: 10px;
+        margin-left: -157px;
+        animation-delay: 1.4s;
+
+        &-exit-done {
+            animation-delay: 0.6s !important;
+        }
+    }
+
+    .toProjectsArrow {
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        bottom: 70px;
+        width: 50px;
+        height: 50px;
+        transition: 1s all;
+        opacity: 0;
+        animation-delay: 1.4s;
+        cursor: pointer;
+        // border: 2px solid #c6c6c6;
+        // background-color: #fff;
+        // box-shadow: 9px 9px 16px rgba(255, 162, 122, 0.23),
+        //     -9px -9px 16px rgba(239, 239, 239, 0.5);
+
+        img {
+            width: 50px;
+            transition: 0.5s all;
+        }
+
+        &-appear-done {
+            opacity: 1;
+        }
+    }
+
+    .toProjectsArrow:hover {
+        // border: 2px solid #000;
+
+        img {
+            filter: invert(1);
+        }
+    }
+
+    .fadeInUp {
+        animation-duration: 0.9s;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.9s;
+        -webkit-animation-fill-mode: both;
+        opacity: 0;
+        animation-name: fadeInUp;
+        -webkit-animation-name: fadeInUp;
+    }
+
+    .mainLogo_F-exit-done,
+    .mainLogo_N-exit-done,
+    .mainLogo_J-exit-done,
+    .mainLogo_O-exit-done {
+        animation-duration: 0.9s;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.9s;
+        -webkit-animation-fill-mode: both;
+        animation-name: fadeOut;
+        -webkit-animation-name: fadeOut;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            transform: translate3d(-30px, 70px, 0px);
+        }
+
+        to {
+            transform: translate3d(0, 0, 0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeOut {
+        from {
+            transform: translate3d(0, 0, 0);
+            opacity: 1;
+        }
+
+        to {
+            transform: translate3d(30px, -70px, 0px);
+            opacity: 0;
+        }
+    }
+
+    @media (max-width: 770px) {
+        .mainLogo_F {
+            height: 241px;
+        }
+        .mainLogo_N {
+            height: 241px;
+            margin-left: -90px;
+        }
+        .mainLogo_J {
+            height: 241px;
+            margin-left: -107px;
+        }
+        .mainLogo_O {
+            height: 241px;
+            margin-top: 10px;
+            margin-left: -112px;
+        }
+    }
+}

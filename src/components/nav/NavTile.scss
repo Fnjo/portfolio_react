@@ -1,0 +1,52 @@
+.navTile {
+    background-color: #ffc28e;
+    box-shadow: 9px 9px 16px rgba(227, 133, 52, 0.5),
+        -9px -9px 16px rgba(255, 220, 189, 0.5);
+    border-radius: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s background-color;
+    outline: none;
+
+    &:hover {
+        background-color: #ffb474;
+    }
+
+    &-isActive {
+        background-color: #ffb474;
+    }
+
+    &-full {
+        margin: 1.5vh;
+        margin-bottom: 0;
+        width: 28vh;
+        height: 25vh;
+        max-height: 28vh;
+    }
+
+    &-half {
+        margin-top: 1.5vh;
+        margin-left: 1.5vh;
+        margin-bottom: 0;
+        width: 12.5vh;
+        height: 12.5vh;
+        max-height: 119px;
+    }
+
+    @media (max-width: 770px) {
+        &-full {
+            width: 100%;
+            height: 27%;
+            max-height: unset;
+        }
+
+        &-half {
+            height: 19%;
+            width: calc(50vw - 2.5vh);
+            max-height: unset;
+        }
+    }
+}
