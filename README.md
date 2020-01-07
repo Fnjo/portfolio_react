@@ -8,7 +8,7 @@ $yarn
 $yarn start
 ```
 <br />
-This is a complete refactor of my old portfolio in React, the old one was written in basic html and css. With this refactor also comes a small update in styling.
+This is a complete refactor of my old portfolio in React, the old one was written in vanilla html, css and javascript. With this refactor also comes a small update in styling.
 
 It is now a lot easier to update my portfolio because everything is now split up in components. Splitting everything up in its own components makes it easier to read and understand the code. 
 
@@ -40,6 +40,7 @@ Updating and adding new projects has now been made easier
 
 ### Technical details
 * Used proptypes for typechecking
+* Added Sass for styling
 * Used react transition group for the transitions
 <br />
 
